@@ -1,7 +1,7 @@
 # FiveM-Car-Radio-Script
 A FiveM car radio script that allows you and your passenger to listen to music from YouTube and control the audio and timeframe.
 
-[IN-PROGRESS] - Additions to come. Display YouTube Thumbnail and Video Title, Timeframe update while the song is playing.
+NEWEST UPDATE: Version 1.0.2 can be found [here](https://github.com/sakinaah/FiveM-Car-Radio-Script/releases/tag/v1.0.2). Final complete working version.
 
 ✨ Features: Start/stop button, Volume slider, Timeframe control, and a Neat Glowing Blue Display.
 
