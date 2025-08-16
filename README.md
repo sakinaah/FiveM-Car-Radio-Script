@@ -3,7 +3,7 @@ A FiveM car radio script that allows you and your passenger to listen to music f
 
 [IN-PROGRESS] - Additions to come. Display YouTube Thumbnail and Video Title, Timeframe update while the song is playing.
 
-✨ Features: Start/stop button, Volume slider, and Timeframe control.
+✨ Features: Start/stop button, Volume slider, Timeframe control, and a Neat Glowing Blue Display.
 
 📂 Installation Download the resource and place it in your server's resources folder.
 
