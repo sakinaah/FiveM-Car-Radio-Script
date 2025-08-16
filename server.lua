@@ -1,5 +1,4 @@
-local radios = {} -- vehicleNetId -> {videoID, volume}
-
+local radios = {}
 RegisterNetEvent("carRadio:playForOccupants")
 AddEventHandler("carRadio:playForOccupants", function(vehicleNetId, videoID, volume)
     local vehicle = NetworkGetEntityFromNetworkId(vehicleNetId)
@@ -26,3 +25,4 @@ AddEventHandler("carRadio:setVolume", function(vehicle, volume)
         TriggerClientEvent("carRadio:setVolume", -1, netId, volume)
     end
 end)
+
