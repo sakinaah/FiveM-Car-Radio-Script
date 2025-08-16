@@ -5,7 +5,6 @@ local lastVideo = nil
 local lastVolume = 50
 local lastTime = 0
 
--- Open menu
 CreateThread(function()
     while true do
         Wait(0)
@@ -19,7 +18,6 @@ CreateThread(function()
     end
 end)
 
--- Track vehicle occupancy
 CreateThread(function()
     while true do
         Wait(250)
@@ -38,7 +36,6 @@ CreateThread(function()
     end
 end)
 
--- NUI callbacks
 RegisterNUICallback("playVideo", function(data, cb)
     if currentCar then
         lastVideo = data.videoID
@@ -77,7 +74,6 @@ RegisterNUICallback("seekVideo", function(data, cb)
     cb("ok")
 end)
 
--- Server sync events
 RegisterNetEvent('carRadio:syncPlay')
 AddEventHandler('carRadio:syncPlay', function(videoID, volume, startTime)
     lastVideo = videoID
@@ -92,3 +88,4 @@ AddEventHandler('carRadio:syncStop', function()
     lastTime = 0
     SendNUIMessage({ action = "stopVideo" })
 end)
+
