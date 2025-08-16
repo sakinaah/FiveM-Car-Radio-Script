@@ -1,0 +1,127 @@
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background: transparent;
+}
+
+#radio-ui {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 460px;
+    background: linear-gradient(145deg, rgba(35,35,35,0.95), rgba(55,55,55,0.95));
+    border: 2px solid #48bfbf;
+    border-radius: 18px;
+    padding: 30px;
+    color: #fff;
+    text-align: center;
+    box-shadow: 0 0 30px #48bfbfaa, inset 0 0 15px rgba(0,0,0,0.3);
+    z-index: 9999;
+    display: none;
+    animation: pulseGlow 3s infinite alternate;
+}
+
+@keyframes pulseGlow {
+    0% { box-shadow: 0 0 30px #48bfbfaa, inset 0 0 15px rgba(0,0,0,0.3); }
+    100% { box-shadow: 0 0 45px #48bfbfff, inset 0 0 20px rgba(0,0,0,0.4); }
+}
+
+#radio-ui h2 {
+    margin-bottom: 25px;
+    color: #48bfbf;
+    font-size: 24px;
+    text-shadow: 0 0 10px #48bfbf;
+}
+
+#radio-ui input[type="text"] {
+    width: 95%;
+    padding: 14px;
+    border-radius: 12px;
+    border: none;
+    margin-bottom: 20px;
+    outline: none;
+    font-size: 16px;
+    box-shadow: inset 0 0 8px rgba(0,0,0,0.5);
+    background: #2b2b2b;
+    color: #fff;
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    margin-bottom: 20px;
+}
+
+.buttons button {
+    flex: 1;
+    padding: 14px 0;
+    border-radius: 12px;
+    border: none;
+    background: linear-gradient(90deg, #48bfbf, #38a7a7);
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+    font-size: 16px;
+    box-shadow: 0 0 10px #48bfbf80;
+    animation: pulseButton 3s infinite alternate;
+}
+
+.buttons button:hover {
+    background: linear-gradient(90deg, #38a7a7, #48bfbf);
+    transform: scale(1.05);
+    box-shadow: 0 0 20px #48bfbfff;
+}
+
+@keyframes pulseButton {
+    0% { box-shadow: 0 0 10px #48bfbf80; }
+    100% { box-shadow: 0 0 20px #48bfbfff; }
+}
+
+/* Neon sliders */
+#volumeSlider, #timeline {
+    width: 95%;
+    margin-top: 12px;
+    -webkit-appearance: none;
+    height: 10px;
+    border-radius: 5px;
+    background: #333;
+    outline: none;
+    box-shadow: 0 0 5px #48bfbf80;
+    transition: 0.2s;
+}
+
+/* Slider thumb */
+#volumeSlider::-webkit-slider-thumb,
+#timeline::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    background: #48bfbf;
+    cursor: pointer;
+    box-shadow: 0 0 12px #48bfbfff;
+    transition: 0.2s;
+}
+
+#volumeSlider::-webkit-slider-thumb:hover,
+#timeline::-webkit-slider-thumb:hover {
+    transform: scale(1.2);
+}
+
+/* Timeline container */
+#timelineContainer {
+    width: 95%;
+    margin: 18px auto 0 auto;
+}
+
+#timeLabels {
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+    color: #48bfbf;
+    margin-top: 4px;
+}
