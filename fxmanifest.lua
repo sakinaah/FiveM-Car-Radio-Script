@@ -1,7 +1,7 @@
 fx_version 'cerulean'
 game 'gta5'
 
-author 'YourName'
+author 'Sakinah'
 description 'Standalone Car Radio with YouTube Audio'
 version '1.0.0'
 
